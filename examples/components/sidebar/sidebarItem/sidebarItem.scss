@@ -1,0 +1,54 @@
+@import "examples/style/base/variables";
+
+$active-bg: #F2594F;
+$hover-bg: #FFCED2;
+
+
+.el-menu-item {
+    color: rgba(0,0,0,0.60);
+    font-weight: bold;
+    user-select: none;
+    .svg-icon {
+        fill: #333;
+    }
+
+    &.is-active {
+        position: relative;
+        // background-color: $active-bg !important;;
+        color: #FFF !important;
+
+        // &::before {
+        //     position: absolute;
+        //     content: "";
+        //     left: 0;
+        //     top: 0;
+        //     bottom: 0;
+        //     width: 3px;
+        //     background: $color-main;
+        // }
+
+        .svg-icon {
+            fill: $color-main;
+        }
+    }
+
+    &:not(.is-active):hover {
+        // background-color: $hover-bg !important;;
+    }
+
+}
+
+.el-submenu {
+    .el-menu-item:not(.is-active) {
+        &:hover {
+            // background-color: $hover-bg !important;
+        }
+    }
+}
+
+.el-menu {
+    .submenu-title-noDropdown {
+        // border-top: 1px solid #ddd;
+    }
+}
+

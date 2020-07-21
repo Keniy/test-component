@@ -1,0 +1,9 @@
+# ignore files
+examples/
+packages/
+public/
+
+# assign igonre files
+vue.config.js
+babel.config.js
+*.map
